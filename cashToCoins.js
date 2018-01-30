@@ -16,10 +16,11 @@ const piggyBank = {
 
 function covertCashToCoins(dollarAmount) {
 for (piggyBank)
-let p = piggyBank.pennies /.01;
-let n = piggyBank.nickels /.05;
-let d = piggyBank.dimes / .10;
 let q = piggyBank.quarters / .25;
+let d = piggyBank.dimes / .10;
+let n = piggyBank.nickels /.05;
+let p = piggyBank.pennies /.01;
+
 
 dollarAmount = p + n + d + q;
 };
