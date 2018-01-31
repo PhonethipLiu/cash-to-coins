@@ -33,13 +33,18 @@ const piggyBank = {
 //     pennies: 0 
 // };
     
+for (let num in dollarAmount){
+    if(num >= num/25)
+}
+
+
     let bank = 0;
     let num = dollarAmount;
-    for (piggyBank.quarters = 0; piggyBank.quarters <= num/.25; piggyBank.quarters++) {
+    for (let q = 0; q <= num/.25; piggyBank.quarters++) {
         for (piggyBank.dimes = 0; piggyBank.dimes <= num/.10; piggyBank.dimes++) {
             for (piggyBank.nickles = 0; piggyBank.nickles <= num/.05; piggyBank.nickles++) {
-                piggyBank.pennies = num - (piggyBank.quarters * .25 + piggyBank.dimes * .10 + piggyBank.nickles * .5);
-                    if (piggyBank.pennies >= 0) {
+                piggyBank.pennies = num - (piggyBank.quarters * .25 + piggyBank.dimes * .10 + piggyBank.nickles * .05);
+                    if (num >= 0) {
                         bank++;
                     }
                 }
@@ -47,6 +52,31 @@ const piggyBank = {
         };
 
         console.log(piggyBank)
+
+
+// ============== loop
+// let bank = 0;
+// let num = dollarAmount;
+// for (piggyBank.quarters = 0; piggyBank.quarters <= num/25; piggyBank.quarters++) {
+//     for (piggyBank.dimes = 0; piggyBank.dimes <= num/10; piggyBank.dimes++) {
+//         for (piggyBank.nickles = 0; piggyBank.nickles <= num/5; piggyBank.nickles++) {
+//             piggyBank.pennies = num - (piggyBank.quarters * 25 + piggyBank.dimes * 10 + piggyBank.nickles * 5);
+//                 if (num >= 0) {
+//                     bank++;
+//                 }
+//             }
+//         }
+//     };
+
+//     console.log(piggyBank)
+
+
+
+
+
+
+
+
 //    return piggyBank;
 
         
