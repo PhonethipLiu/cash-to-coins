@@ -19,37 +19,36 @@
 
 const dollarAmount = 10.17;
 const piggyBank = {
-    quaters: 0, 
+    quarters: 0, 
     dimes: 0,
     nickles: 0,
     pennies: 0 
 };
 
-function cashToCoins(dollarAmount) {
-let piggyBank = {
-    quaters: 0, 
-    dimes: 0,
-    nickles: 0,
-    pennies: 0 
-};
+// function cashToCoins(dollarAmount) {
+// let piggyBank = {
+//     quaters: 0, 
+//     dimes: 0,
+//     nickles: 0,
+//     pennies: 0 
+// };
     
-    piggyBank = 0;
-    for (piggyBank q = 0; q <= x /.25; q++) {
-        for (piggyBank d = 0; d <= x /.10; d++) {
-            for (piggyBank n = 0; n <= x /.05; n++) {
-                for (piggyBank p = 0; p <= x /.01; p++) {
-                    piggyBank i = q * .25 + d * 10 + n * 5 + p;
-                    if (i == x) {
-                        piggyBank++;
-                    } else if (i > n) {
-                        break;
+    let bank = 0;
+    let num = dollarAmount;
+    for (piggyBank.quarters = 0; piggyBank.quarters <= num/.25; piggyBank.quarters++) {
+        for (piggyBank.dimes = 0; piggyBank.dimes <= num/.10; piggyBank.dimes++) {
+            for (piggyBank.nickles = 0; piggyBank.nickles <= num/.05; piggyBank.nickles++) {
+                piggyBank.pennies = num - (piggyBank.quarters * .25 + piggyBank.dimes * .10 + piggyBank.nickles * .5);
+                    if (piggyBank.pennies >= 0) {
+                        bank++;
                     }
                 }
             }
-        }
-    }
-    return piggyBank;
-}
+        };
+
+        console.log(piggyBank)
+//    return piggyBank;
+
         
 //let q = piggyBank.quarters / .25;
 //let d = piggyBank.dimes / .10;
@@ -58,7 +57,7 @@ let piggyBank = {
 
 //return piggyBank;
 
-}; 
+
      
-let coins = cashToCoins()    
-console.log();
+// let coins = cashToCoins()    
+// console.log();
